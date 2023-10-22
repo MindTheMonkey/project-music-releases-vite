@@ -12,41 +12,121 @@ code {
     monospace;
 }
 
+html {
+  font-family: 'Helvetica', sans-serif;
+  color: #ffffff;
+}
+
 body {
   background-color: black;
 }
+.header h1 {
+  color: white;
+  font-size: 16px;
+}
+
+.albumCover {
+  position: relative;
+  overflow: hidden;
+}
+
+.albumCover:hover .albumControls {
+  opacity: 1;
+}
+
+.albumControls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.albumControls .controlIcon {
+  margin: 0 10px;
+  width: 15%;
+  height: 15%;
+  filter: invert(90%);
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+  opacity: 0.7;
+}
+
+.albumControls .controlIcon:hover {
+  opacity: 1;
+}
+
+.albumControls .controlIcon.play:hover {
+  width: 22%;
+  height: 22%;
+}
 
 .album .title {
-  font-size: 14px;
-  font-family: 'Helvetica', sans-serif;
   color: #ffffff;
   margin: 0; /* to remove default margins */
 }
+.album .title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.album .title a:hover {
+  text-decoration: underline
+}
 
 .album .artist {
-  font-size: 14px;
-  font-family: 'Helvetica', sans-serif;
   color: #a0a0a0;
   margin: 0; /* to remove default margins */
 }
 
+.album img {
+  width: 100%;
+  height: auto;
+}
+
+.appContainer {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .albumContainer {
+  width: 100%;
+  max-width: 100%; 
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(1, 1fr);
 }
 
 /* Media rules */
-/* Tablet - 2 per row */
+/* Tablets - 2 per row */
 @media (min-width: 768px) {
+
+  .appContainer {
+    max-width: 768px;
+  }
+
   .albumContainer {
     grid-template-columns: repeat(2, 1fr);
   }
+
 }
 
 /* Desktop - 4 per row */
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
+
+  .appContainer {
+    max-width: 1400px;
+  }
+
   .albumContainer {
     grid-template-columns: repeat(4, 1fr);
   }
+
 }
