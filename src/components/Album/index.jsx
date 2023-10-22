@@ -3,7 +3,6 @@ import { AlbumTitle } from "./AlbumTitle"
 import { AlbumCover } from "./AlbumCover"
 
 export const Album = ({ album }) => {
-  console.log(album)
   return (
     <div className="album">
       <AlbumCover images={album.images} />

@@ -1,15 +1,15 @@
-import data from "./data.json";
-import { Header } from "./components/Header"
-import { Album } from "./components/Album"
+import data from "@/data.json";
+import { Header } from "@/components/Header"
+import { Album } from "@/components/Album"
 
 console.log(data);
 const albums = data.albums.items;
 
 export const App = () => {
   return (
-    <div className="appContainer">
+    <div className="app-container">
       <Header />
-      <div className="albumContainer">
+      <div className="album-container">
         {albums.map(album => (
           <Album key={album.id} album={album} />
           )
