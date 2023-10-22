@@ -1,7 +1,6 @@
 import { Artist } from "./artist"
 
 export const Artists = ({artists}) => {
-
   const artistSeparator = (artistCount, index) => {
     if (index === artistCount - 2) {
       // If we have 1 artist this will never match as index would have to be -1
