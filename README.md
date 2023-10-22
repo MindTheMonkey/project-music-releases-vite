@@ -36,6 +36,8 @@ The task was to recreate the provided design as much as possible so that was my 
 
 Live version:
 https://statuesque-jalebi-8945ec.netlify.app/
+Intermediate stretch goal:
+https://monumental-tartufo-57d610.netlify.app/
 
 ## Instructions
 
