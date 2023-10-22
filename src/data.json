@@ -14,6 +14,36 @@
             "name": "Capo",
             "type": "artist",
             "uri": "spotify:artist:5y9wg9qkGBl0n9v9RzaPKu"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/78TTCmh2koperK5NBn7DgR"
+            },
+            "href": "https://api.spotify.com/v1/artists/78TTCmh2koperK5NBn7DgR",
+            "id": "78TTCmh2koperK5NBn7DgR",
+            "name": "102 Boyz",
+            "type": "artist",
+            "uri": "spotify:artist:78TTCmh2koperK5NBn7DgR"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4Ge8xMJNwt6EEXOzVXju9a"
+            },
+            "href": "https://api.spotify.com/v1/artists/4Ge8xMJNwt6EEXOzVXju9a",
+            "id": "4Ge8xMJNwt6EEXOzVXju9a",
+            "name": "Caroline Polachek",
+            "type": "artist",
+            "uri": "spotify:artist:4Ge8xMJNwt6EEXOzVXju9a"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2IjiuEObrCKyZvSb8xLxG9"
+            },
+            "href": "https://api.spotify.com/v1/artists/2IjiuEObrCKyZvSb8xLxG9",
+            "id": "2IjiuEObrCKyZvSb8xLxG9",
+            "name": "filous",
+            "type": "artist",
+            "uri": "spotify:artist:2IjiuEObrCKyZvSb8xLxG9"
           }
         ],
         "available_markets": [
