@@ -1,4 +1,4 @@
-import { Artist } from "./artist"
+import { ArtistName } from "./ArtistName"
 
 export const Artists = ({artists}) => {
   const artistSeparator = (artistCount, index) => {
@@ -27,7 +27,7 @@ export const Artists = ({artists}) => {
     <div className="artists">
       {artists.map((artist, index) => (
         <>
-        <Artist key={artist.id} artist={artist} />
+        <ArtistName key={artist.id} artist={artist} />
         {artistSeparator(artists.length, index)}
         </>
       ))}
